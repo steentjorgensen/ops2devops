@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: studentx-deployment
+  name: student2-deployment
 spec:
   selector:
     matchLabels:
-      app: studentx
+      app: student2
   template:
     metadata:
       labels:
-        app: studentx
+        app: student2
     spec:
       containers:
-      - name: studentx
-        image: registry.tanzu.dk/ops2devops/studentx:v1
+      - name: student2
+        image: registry.tanzu.dk/ops2devops/student2:v1
